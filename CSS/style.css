@@ -1,0 +1,214 @@
+/*##############    COLORS         ###########################*/
+:root{
+    --main-DarkBrown:#B87D4B;
+    --main-LightBrown: #B58A3B;
+    --main-Text:#EDD382;
+    --main-Black:#4d392e;
+}
+
+/*##############    Setup         ###########################*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Playfair';
+}
+/*################ Navbar #################*/
+.transparent{
+    background:#4d392ede;
+}
+
+.navbar-toggler-icon{
+    border: 3px solid var(--main-DarkBrown);
+    background:brown;
+    box-shadow: none;
+    color:var(--main-Text);
+}
+
+.nav-link,
+.navbar-brand{
+    color:var(--main-Text) !important;
+}
+.navbar-brand{
+    font-size:30px;
+}
+.nav-link{
+    font-size: 15px;
+}
+.nav-link:hover{
+    color: rgb(139, 139, 139) !important;
+}
+/*################ Navbar End #################*/
+
+
+
+/*##############    Header Section        ###########################*/
+header{
+    height: 100vh;
+    background: linear-gradient(#05050598, #ffffff52), url(/images/header.jpg) fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+
+.banner-center{
+    height: 100vh;
+    color: var(--main-Text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-underline{
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 8px;
+    border-radius: 5px;
+    background: var(--main-LightBrown);
+}
+.banner-center a {
+    font-size: 24px;
+    margin: 0 auto;
+    display: inline-block;
+    border: 2px solid var(--main-DarkBrown);
+    width:150px;
+    color: var(--main-Text);
+    transition: all 0.5s ease;
+}
+.banner-center a:hover{
+    background: rgba(237, 210, 130, 0.623);
+    text-decoration: none;
+    color: rgb(228, 222, 204);
+}
+/*##############    Header Section End       ###########################*/
+/*##############    Skills      ###########################*/
+.title{
+    margin: 40px 0px;
+}
+.text-underline{
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: 8px;
+    border-radius: 5px;
+    background: var(--main-LightBrown);
+}
+#skills{
+    margin-bottom: 20px;
+}
+#skills i {
+    font-size:60px;
+    margin-bottom: 5px;
+    color:var(--main-Black);
+}
+#skills a{
+    margin-bottom: 14px;
+    background: var(--main-LightBrown);
+    color:var(--main-Text);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+#skills a:hover{
+    transform: translateY(-2px);
+}
+
+/*##############    Skills End       ###########################*/
+
+/*##############    About       ###########################*/
+#about{
+    background: var(--main-Black);
+}
+#about h1{
+    color: var(--main-Text);
+}
+.about-underline{
+    width: 180px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 8px;
+    border-radius: 5px;
+    background: var(--main-LightBrown);
+}
+#about p {
+    color: var(--main-LightBrown);
+}
+.pic{
+    height:600px;
+    background: url(/images/about.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    border-bottom: 600px solid transparent;
+    border-left:100px solid var(--main-Black);
+}
+/*################ Media Quieries for About #################*/
+@media screen and (max-width: 575px) {
+    .pic{
+        height:600px;
+        background: url(/images/about.jpg);
+        background-position: center;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        border: none;
+    }
+}
+#about .box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*##############    About End       ###########################*/
+
+/*##############    Contact      ###########################*/
+input{
+    margin: 8px 0;
+}
+.submit-btn{
+    background: var(--main-LightBrown);
+    color:var(--main-Text);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+
+}
+#footer{
+    background:var(--main-Black);
+    margin: 0;
+    color: var(--main-LightBrown);
+}
+#footer .title{
+    margin-bottom: 0;
+}
+.footer-icons {
+    width:30%;
+    margin: auto;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 575px) {
+    .footer-icons {
+        width:60%;
+    }
+}
+
+.footer-icons a i {
+    font-size: 30px;
+    color:var(--main-Text);
+    transition: all 1s ease-in-out;
+}
+.footer-icons a i:hover {
+    transform: translateY(-1px);
+}
+/*##############    Contact End       ###########################*/
+
+
+
+
+
+
